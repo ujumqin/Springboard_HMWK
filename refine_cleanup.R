@@ -66,7 +66,7 @@ while(x <= length(inventory$product_code)) {
 x<-1
 while(x <= length(inventory$address)) {
   print(x)
-  inventory$full_address[x] <- (paste(inventory$address[x], inventory$city[x], inventory$country[x], sep=","))
+  inventory$full_address[x] <- (paste(inventory$address[x], inventory$city[x], inventory$country[x], sep=", "))
   x <- x+1
 }
 
