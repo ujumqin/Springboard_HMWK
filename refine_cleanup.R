@@ -66,7 +66,7 @@ while(x <= length(inventory$product_code)) {
 x<-1
 while(x <= length(inventory$address)) {
   print(x)
-  inventory$full_address[x] <- (paste(inventory$address[x], inventory$city[x], inventory$country[x], sep=" "))
+  inventory$full_address[x] <- (paste(inventory$address[x], inventory$city[x], inventory$country[x], sep=","))
   x <- x+1
 }
 
@@ -91,4 +91,5 @@ inventory$product_laptop[inventory$product_category %in% "Laptop"] <-1
 
 #Rearranges the columns and drops the original product column
 inventory <- inventory[,c("company","product_code","product_number","product_category","full_address","name","company_philips", "company_akzo", "company_van_houten", "company_unilever", "product_smartphone", "product_tablet", "product_tv", "product_laptop" )]
-inventory
+
+write.csv(inventory, file = "refine_clean.csv")
