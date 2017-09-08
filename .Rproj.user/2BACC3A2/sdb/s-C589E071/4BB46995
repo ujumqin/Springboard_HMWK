@@ -1,14 +1,14 @@
 {
     "collab_server" : "",
-    "contents" : "library(dplyr)\n\nread.csv(tbl_df(titanic3.xls))\n",
+    "contents" : "library(dplyr)\nlibrary(xlsx)\n\ntitanic <- tbl_df(read.csv(\"titanic3.csv\"))\nread.csv(\"titanic3.csv\")\n",
     "created" : 1504839937786.000,
     "dirty" : true,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "3737332765",
+    "hash" : "1757429519",
     "id" : "4BB46995",
-    "lastKnownWriteTime" : 1504840346,
-    "last_content_update" : 1504840387441,
+    "lastKnownWriteTime" : 1504840523,
+    "last_content_update" : 1504841304160,
     "path" : "~/Springboard_HMWK/Titanic/Titanic_Script.R",
     "project_path" : "Titanic/Titanic_Script.R",
     "properties" : {
