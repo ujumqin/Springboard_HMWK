@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1504839937786.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "4BB46995",
+    "lastKnownWriteTime" : 1504839951,
+    "last_content_update" : 1504839951476,
+    "path" : "~/Springboard_HMWK/Titanic/Titanic_Script.R",
+    "project_path" : "Titanic/Titanic_Script.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
