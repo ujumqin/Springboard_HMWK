@@ -9,7 +9,14 @@ print(titanic$embarked)
 titanic$age[is.na(titanic$age)] <- mean(titanic$age, na.rm=TRUE)
 print(titanic$age)
 
+typeof(titanic$boat)
 
+titanic$boat[titanic$boat==" "] <- 'NONE'
+
+print(titanic$boat)
+
+
+print(titanic$boat[3])
 
 
 print(titanic)
@@ -22,17 +29,9 @@ mean(titanic$age, na.rm = TRUE)
 
 ?mean
 
-if(titanic$age[16] == TRUE) {
+if(titanic$boat[3] == "") {
   print("This is true")
 } else {
   print("This is false")
 }
-
-
-if(is.na(titanic$age[16])) {
-  print("This is na")
-} else {
-  print("Something Else")
-}
-
 
