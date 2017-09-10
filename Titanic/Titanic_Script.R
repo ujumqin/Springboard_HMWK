@@ -1,7 +1,7 @@
 library(dplyr)
 options(max.print = 100000)
 
-titanic <- tbl_df(read.csv("titanic3.csv"))
+titanic <- tbl_df(read.csv("titanic3.csv", stringsAsFactors = FALSE))
 
 titanic$embarked[titanic$embarked==""] <- 'S'
 print(titanic$embarked)
@@ -9,14 +9,11 @@ print(titanic$embarked)
 titanic$age[is.na(titanic$age)] <- mean(titanic$age, na.rm=TRUE)
 print(titanic$age)
 
-typeof(titanic$boat)
-
-titanic$boat[titanic$boat==" "] <- 'NONE'
-
+titanic$boat[titanic$boat==""] <- 'NONE'
 print(titanic$boat)
 
 
-print(titanic$boat[3])
+
 
 
 print(titanic)
